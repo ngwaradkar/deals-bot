@@ -1,14 +1,12 @@
 import json
-from pathlib import Path
+import os
 
-def fetch_deals():
-    # Dummy deals for now
-    deals = [
-        {"product": "XYZ Chips 100g", "price": 10, "mrp": 120, "discount": 92, "platform": "Blinkit"},
-        {"product": "ABC Shampoo 100ml", "price": 15, "mrp": 180, "discount": 91, "platform": "Instamart"},
-    ]
-    Path("data").mkdir(exist_ok=True)
-    Path("data/deals.json").write_text(json.dumps(deals, indent=2), encoding="utf-8")
+# Example deals data (replace this with your scraping logic)
+deals = [
+    {"item": "Coke 1L", "price": 10, "discount": "95%"},
+    {"item": "Pepsi 1L", "price": 12, "discount": "92%"},
+]
 
-if __name__ == "__main__":
-    fetch_deals()
+os.makedirs("data", exist_ok=True)
+with open("data/deals.json", "w") as f:
+    json.dump(deals, f, indent=2)
