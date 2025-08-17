@@ -2,8 +2,8 @@ name: Update Deals
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # runs every 10 minutes
-  workflow_dispatch:          # allows manual trigger
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:
 
 jobs:
   update-deals:
@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run update script
-        run: python update_deals.py
+      - name: Run scraper
+        run: python scraper.py   # <---- this creates data/deals.json
 
       - name: Commit and push changes
         run: |
