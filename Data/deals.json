@@ -1,0 +1,16 @@
+[
+  {
+    "product": "XYZ Chips 100g",
+    "price": 10,
+    "mrp": 120,
+    "discount": 92,
+    "platform": "Blinkit"
+  },
+  {
+    "product": "ABC Shampoo 100ml",
+    "price": 15,
+    "mrp": 180,
+    "discount": 91,
+    "platform": "Instamart"
+  }
+]
