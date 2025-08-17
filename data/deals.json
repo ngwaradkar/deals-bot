@@ -1,0 +1,12 @@
+[
+  {
+    "item": "Coke 1L",
+    "price": 10,
+    "discount": "95%"
+  },
+  {
+    "item": "Pepsi 1L",
+    "price": 12,
+    "discount": "92%"
+  }
+]
